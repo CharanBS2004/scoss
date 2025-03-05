@@ -1,0 +1,97 @@
+<div class="wrapper">
+    <section class="hero-section">
+        <h1>Leading IT Services Company in Tumkur | Digital Transformation Services</h1>
+        <p>Transform your business with our comprehensive IT services, custom software 
+            development, and technology consulting. Get expert solutions tailored to your needs.</p>
+        <button>Get a Free IT Consultation </button>   
+        <button>Explore Our Services</button>   
+    </section>
+
+
+    <section class="value-proposition-section">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Comprehensive IT Solutions Tailored to Your Needs </li>
+            <li>Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</li>
+            <li>Affordable and Scalable Digital Marketing Services</li>
+        </ul>
+        <button>Schedule a Free IT Consultation →</button>   
+    </section>
+
+
+    <section class="services-overview-section">
+        <h2>Our IT Services</h2>
+        <p>Explore our wide range of IT services designed to support your business needs:</p>
+        
+        <div class="services">
+            <div class="service-card" appearance="outlined" *ngFor="let data of servicesData">
+                <p>{{data.title}}</p>
+                <img mat-card-image [src] ="data.iconURL" alt="">  
+                <p>{{data.description}} </p>
+                <p>{{data.features}}</p>
+                <button>{{data.buttonName}}</button>
+            </div>
+        </div>  
+
+    </section>
+
+
+    <section class="about-us-section">
+        <h2>Your Trusted IT Partner in Tumkur</h2>
+        <p>Based in Tumkur, we are a team of dedicated IT professionals committed to delivering high-quality 
+            services. Our mission is to help businesses thrive in today’s digital era with reliable and innovative 
+            IT solutions.</p>
+
+            <h2>Serving Industries Across Tumakuru</h2>
+            <ul> 
+                <li>Manufacturing Units</li>
+                <li>Educational Institutions</li>
+                <li>Healthcare Facilities</li>
+                <li>Retail Businesses</li>
+                <li>Professional Services</li>
+                <li>Small & Medium Enterprises</li>
+
+            </ul>
+
+            <h3>Serving Industries Across Tumakuru</h3>
+            <ul> 
+                <li>Tumkur City</li>
+                <li>Sira</li>
+                <li>Gubbi</li>
+                <li>Tiptu</li>
+                <li>Kunigal</li>
+                <li>Surrounding Industrial Areas</li>
+            </ul>
+
+            <h2>Why Partner with Us for Your IT Needs?</h2>
+
+            <h3>Local Expertise</h3>
+
+
+            <ul>
+                <li>Based in Tumkur</li>
+                <li>Understanding of local business environment</li>
+                <li>Bilingual support team: 24/7 technical support in Kannada and English</li>
+                <li>Regular client visits</li>
+            </ul>
+    </section>
+
+
+    <section class="call-to-action">
+        <h2>Start Your Digital Journey Today</h2>
+        <p>Schedule a free consultation with our experts and discover how we can help you achieve your 
+            technology goals.</p>
+        <button>Book Free Consultation</button>
+
+        <h2>Get in Touch with Us Today</h2>
+        <p>Ready to take your business to the next level? Contact us to discuss your IT needs.</p>
+        <ul>
+            <li>Phone:</li>
+            <li>Email:</li>
+            <li>Address:</li>
+        </ul>
+        <p>[map integration]</p>
+    </section>
+
+
+

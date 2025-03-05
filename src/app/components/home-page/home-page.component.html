@@ -1,31 +1,37 @@
-<div class="wrapper">
+<div class="wrapper" [ngClass]="theme">
+    <button (click)="changeTheme()">Mode</button>
+
     <section class="hero-section">
         <h1>Leading IT Services Company in Tumkur | Digital Transformation Services</h1>
         <p>Transform your business with our comprehensive IT services, custom software 
             development, and technology consulting. Get expert solutions tailored to your needs.</p>
-        <button>Get a Free IT Consultation </button>   
-        <button>Explore Our Services</button>   
+        <div>
+            <button>Get a Free IT Consultation </button>   
+            <button>Explore Our Services</button>   
+        </div>
     </section>
 
 
     <section class="value-proposition-section">
         <h2>Why Choose Us?</h2>
-        <ul>
-            <li>Comprehensive IT Solutions Tailored to Your Needs </li>
-            <li>Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</li>
-            <li>Affordable and Scalable Digital Marketing Services</li>
+        <ul>    
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPS6FSv1U6tuns65eYi291cfOMFsDTRrnHw&s" alt="">Comprehensive IT Solutions Tailored to Your Needs </li>
+            <li><img src="https://certumventures.in/wp-content/uploads/2023/01/managed-services-slider2-1024x682-1.jpg"> Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</li>
+            <li><img src="https://img.freepik.com/premium-vector/isometric-flat-3d-illustration-social-media-strategy-concept-digital-marketing-startup-business_18660-4448.jpg?semt=ais_hybrid" alt="">Affordable and Scalable Digital Marketing Services</li>
         </ul>
-        <button>Schedule a Free IT Consultation →</button>   
+        <div>
+            <button>Schedule a Free IT Consultation →</button>   
+        </div>
     </section>
 
 
     <section class="services-overview-section">
         <h2>Our IT Services</h2>
-        <p>Explore our wide range of IT services designed to support your business needs:</p>
+        <p class="sub-title">Explore our wide range of IT services designed to support your business needs:</p>
         
         <div class="services">
             <div class="service-card" appearance="outlined" *ngFor="let data of servicesData">
-                <p>{{data.title}}</p>
+                <p class="service-heading">{{data.title}}</p>
                 <img mat-card-image [src] ="data.iconURL" alt="">  
                 <p>{{data.description}} </p>
                 <p>{{data.features}}</p>
@@ -41,18 +47,19 @@
         <p>Based in Tumkur, we are a team of dedicated IT professionals committed to delivering high-quality 
             services. Our mission is to help businesses thrive in today’s digital era with reliable and innovative 
             IT solutions.</p>
-
+            <div>
             <h2>Serving Industries Across Tumakuru</h2>
             <ul> 
-                <li>Manufacturing Units</li>
-                <li>Educational Institutions</li>
-                <li>Healthcare Facilities</li>
-                <li>Retail Businesses</li>
-                <li>Professional Services</li>
-                <li>Small & Medium Enterprises</li>
+                <li><img src="https://cdn-icons-png.freepik.com/256/11498/11498789.png?semt=ais_hybrid" alt="">Manufacturing Units</li>
+                <li><img src="https://cdn-icons-png.freepik.com/256/17649/17649805.png?semt=ais_hybrid" alt="">Educational Institutions</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/027/374/615/non_2x/digital-health-logo-png.png" alt="">Healthcare Facilities</li>
+                <li><img src="https://png.pngtree.com/png-clipart/20220909/original/pngtree-handshake-partnership-deal-png-image_8503808.png" alt="">Retail Businesses</li>
+                <li><img src="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-audiologist-clipart-woman-scientist-at-computer-watching-science-experiments-cartoon-vector-png-image_6797424.png" alt="">Professional Services</li>
+                <li><img src="https://png.pngtree.com/png-vector/20230729/ourmid/pngtree-success-clipart-cartoon-young-successful-businessman-holding-a-trophy-vector-png-image_6812134.png" alt="">Small & Medium Enterprises</li>
 
             </ul>
-
+        </div>
+    <div>
             <h3>Serving Industries Across Tumakuru</h3>
             <ul> 
                 <li>Tumkur City</li>
@@ -62,36 +69,38 @@
                 <li>Kunigal</li>
                 <li>Surrounding Industrial Areas</li>
             </ul>
-
+        </div>
+    <div>
             <h2>Why Partner with Us for Your IT Needs?</h2>
 
+            
+            
             <h3>Local Expertise</h3>
-
-
             <ul>
-                <li>Based in Tumkur</li>
-                <li>Understanding of local business environment</li>
-                <li>Bilingual support team: 24/7 technical support in Kannada and English</li>
-                <li>Regular client visits</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/024/382/913/non_2x/green-check-mark-icon-symbol-logo-in-a-circle-tick-symbol-green-checkmark-approve-transparent-free-png.png" alt="">Based in Tumkur</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/024/382/913/non_2x/green-check-mark-icon-symbol-logo-in-a-circle-tick-symbol-green-checkmark-approve-transparent-free-png.png" alt="">Understanding of local business environment</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/024/382/913/non_2x/green-check-mark-icon-symbol-logo-in-a-circle-tick-symbol-green-checkmark-approve-transparent-free-png.png" alt="">Bilingual support team: 24/7 technical support in Kannada and English</li>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/024/382/913/non_2x/green-check-mark-icon-symbol-logo-in-a-circle-tick-symbol-green-checkmark-approve-transparent-free-png.png" alt="">Regular client visits</li>
             </ul>
+        </div>
     </section>
 
 
     <section class="call-to-action">
+        <div>
         <h2>Start Your Digital Journey Today</h2>
         <p>Schedule a free consultation with our experts and discover how we can help you achieve your 
             technology goals.</p>
         <button>Book Free Consultation</button>
-
+    </div>
+<div>
         <h2>Get in Touch with Us Today</h2>
         <p>Ready to take your business to the next level? Contact us to discuss your IT needs.</p>
         <ul>
-            <li>Phone:</li>
-            <li>Email:</li>
-            <li>Address:</li>
+            <li><img src="https://png.pngtree.com/png-clipart/20230320/original/pngtree-circle-phone-call-icon-in-black-color-png-image_8997757.png" alt="">9113030506 / 8971417455</li>
+            <li><img src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png" alt="">Email: scossservices&#64;gmail.com</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSspcwT4cVJ1MW71Rkd_Hohz2_uYcYU84n2wA&s" alt="">Ground Floor SLN Krupa, 2nd Stage 2nd Main Mahalakshmi Nagar, Batawadi, Tumkur - 572103</li>
         </ul>
         <p>[map integration]</p>
+    </div>
     </section>
-
-
-

@@ -8,6 +8,23 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+  
+
+  theme:string = 'dark'
+  isDark:boolean = true;
+
+  changeTheme(){
+    this.isDark = !this.isDark;
+    if(this.isDark){
+      this.theme = 'dark'
+    }
+    else{
+      this.theme = 'light'
+
+    }
+  }
+
+
 servicesData:any[] = [
   {
     title : 'Website Design and Development ',

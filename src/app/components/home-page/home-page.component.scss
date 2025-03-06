@@ -142,7 +142,7 @@ button{
     font-size: 1.3rem;
     margin: 0 0 1em 0;
 
-    animation: appear linear;
+    animation: appear ease-out;
         animation-timeline: view();
         animation-range: entry 0 cover 35%;
 

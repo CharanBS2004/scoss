@@ -19,7 +19,13 @@
 .wrapper{
     color: var(--font-color);
     background-color: var(--background-color);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    // display: grid;
+    // grid-template-columns: 90vw;
+
+
 }
 
 button{
@@ -334,4 +340,9 @@ button{
         border-radius: 15px;
         padding: 10px 20px;
     }
+}
+
+
+section{
+    margin: 0;
 }

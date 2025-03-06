@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
+
+
 export class HomePageComponent {
 
   
 
   theme:string = 'light'
-  isDark:boolean = true;
+  isDark:boolean = false;
 
   changeTheme(){
     this.isDark = !this.isDark;

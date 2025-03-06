@@ -10,7 +10,7 @@ export class HomePageComponent {
 
   
 
-  theme:string = 'dark'
+  theme:string = 'light'
   isDark:boolean = true;
 
   changeTheme(){
@@ -20,7 +20,6 @@ export class HomePageComponent {
     }
     else{
       this.theme = 'light'
-
     }
   }
 

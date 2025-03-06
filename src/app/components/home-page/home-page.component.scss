@@ -19,6 +19,7 @@
 .wrapper{
     color: var(--font-color);
     background-color: var(--background-color);
+    display: block;
 }
 
 button{
@@ -95,10 +96,10 @@ button{
 .hero-section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     height: 90vh;
-    font-size:200%;
+    font-size: 2rem;
 
     animation: appear linear;
         animation-timeline: view();
@@ -121,7 +122,7 @@ button{
     
     button{
         border-radius: 1em;
-        font-size: 100%;
+        font-size: 2rem;
         padding: 35px;
 
     }
@@ -131,15 +132,15 @@ button{
     flex-direction: column;
     justify-content: space-around;
     height: 90vh;
-    font-size: 120%;
-    margin: 0 0 5em 0;
+    font-size: 1.3rem;
+    margin: 0 0 1em 0;
 
     animation: appear linear;
         animation-timeline: view();
         animation-range: entry 0 cover 35%;
 
     h2{
-        font-size: 300%;
+        font-size: 3rem;
 
     }
 
@@ -163,14 +164,14 @@ button{
         text-align: center;
         height: 50vh;
         border-radius: 2em;
-        font-size: 120%;
+        font-size: 1.3rem;
     }
 
     button{
         width: 60%;
         height: 3em;
         border-radius: 1em;
-        font-size: 150%;
+        font-size: 1.5rem;
 
     }
 
@@ -187,10 +188,10 @@ button{
 
     animation: appear linear;
         animation-timeline: view();
-        animation-range: entry 0 cover 35%;
+        animation-range: entry 0 cover 25%;
       
     .sub-title{
-        font-size: 200%;
+        font-size: 1.5rem;
         margin: 2em;
     }
 
@@ -209,7 +210,7 @@ button{
     }
     
     .service-heading{
-        font-size: 200%;
+        font-size: 1.5rem;
     }
 
     h2{
@@ -231,9 +232,9 @@ button{
 
 .about-us-section{
     padding: 2em;
-    font-size: 230%;
+    font-size: 2.1rem;
     h1,h2,h3{
-        font-size: 200%;
+        font-size: 3rem;
         margin: 1em 0 1em 0;
 
     }
@@ -278,7 +279,7 @@ button{
     justify-content: center;
     align-items: center;
     padding: 2em;
-    font-size: 230%;
+    font-size: 2.1rem;
 
     *{
         animation: appear linear;

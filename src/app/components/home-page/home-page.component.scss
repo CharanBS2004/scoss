@@ -581,6 +581,18 @@ button{
         .why-partner-with-us{
             font-size: 1.2rem;
         }
+        .company-image-container{
+            width: 80vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .company-image{
+                width: 50%;
+                border-top-left-radius: 10%;
+                border-bottom-right-radius: 10%;
+            }
+        }
     }
     
     .call-to-action{
